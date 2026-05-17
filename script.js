@@ -1,4 +1,4 @@
-alert("JS FUNCIONA");
+alert("Bienvenido a mi Portafolio");
 
 function showSection(id) {
     const sections = document.querySelectorAll('.section');
