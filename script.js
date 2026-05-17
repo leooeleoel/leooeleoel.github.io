@@ -1,17 +1,11 @@
+alert("JS FUNCIONA");
+
 function showSection(id) {
     const sections = document.querySelectorAll('.section');
 
     sections.forEach(sec => {
-        sec.classList.remove('active');
+        sec.style.display = "none";
     });
 
-    const selected = document.getElementById(id);
-    if (selected) {
-        selected.classList.add('active');
-    }
+    document.getElementById(id).style.display = "block";
 }
-
-// Mostrar por defecto
-window.onload = () => {
-    showSection('about');
-};
