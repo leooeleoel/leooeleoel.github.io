@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+/* LINKS */
+a {
+    color: #22c55e;
+}
+
+/* ICONOS */
+i {
+    font-size: 24px;
+    margin-right: 10px;
+}
