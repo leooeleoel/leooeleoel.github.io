@@ -1,13 +1,17 @@
 function showSection(id) {
-    // Ocultar todas
     const sections = document.querySelectorAll('.section');
-    sections.forEach(sec => sec.classList.remove('active'));
 
-    // Mostrar la seleccionada
-    document.getElementById(id).classList.add('active');
+    sections.forEach(sec => {
+        sec.classList.remove('active');
+    });
+
+    const selected = document.getElementById(id);
+    if (selected) {
+        selected.classList.add('active');
+    }
 }
 
-// Mostrar una por defecto
+// Mostrar por defecto
 window.onload = () => {
     showSection('about');
 };

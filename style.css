@@ -54,10 +54,18 @@ i {
     font-size: 24px;
     margin-right: 10px;
 }
+
+/* SPA */
 .section {
     display: none;
+    animation: fade 0.3s ease;
 }
 
 .section.active {
     display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
